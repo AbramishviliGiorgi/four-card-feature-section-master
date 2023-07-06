@@ -1,0 +1,213 @@
+:root{
+    --Primary-red:hsl(0, 78%, 62%);
+    --Primary-cyan: hsl(180, 62%, 55%);
+    --Primary-orange: hsl(34, 97%, 64%);
+    --Primary-blue: hsl(212, 86%, 64%);
+
+    --Neutral-very-dark-blue: hsl(234, 12%, 34%);
+    --Neutral-greyish-blue: hsl(229, 6%, 66%);
+    --Neutral-very-light-gray: hsl(0, 0%, 98%);
+
+    --my-font-family: 'Poppins', sans-serif;
+    --my-font-weight-200: 200;
+    --my-font-weight-400: 400;
+    --my-font-weight-600: 600;
+
+}
+html{
+    font-size: 62.5%;
+}
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*start with mobile version first*/
+body{
+    min-height: 100vh;;
+    font-family: var(--my-font-family);
+    font-weight: 400;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 37.5rem;
+    
+}
+.header-p{
+    text-align: center;
+    color: var(--Neutral-very-dark-blue);
+    font-size: 2.4rem;
+    font-family: var(--my-font-family);
+    font-style: normal;
+    font-weight: 275;
+    line-height: normal;
+    letter-spacing: 0.167px;
+
+}
+.header-h1{
+    
+    color: var(--Neutral-very-dark-blue);
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: var(--my-font-family);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.167px;
+}
+.title-info{
+    color: var(--Neutral-very-dark-blue);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--my-font-family);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5rem;
+    letter-spacing: 0.104px;
+    max-width: 31.1rem;
+}
+.flex-group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.50);
+    width: 31.1rem;
+}
+.supervisor{
+    border-top: 0.3rem  solid var(--Primary-cyan) ;
+}
+.team-builder{
+    border-top: 0.3rem solid var(--Primary-red) ;
+}
+.karma{
+    border-top: 0.3rem solid var(--Primary-orange) ;
+}
+.calculator{
+    border-top: 0.3rem solid var(--Primary-blue) ;
+}
+
+.flex-group-img{
+    width: 5.7rem;
+    height: 5.7rem;
+    
+}
+.img-div{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2.8rem;
+}
+.flex-group-text{
+    padding: 2rem;
+}
+.flex-group-h2{
+    color: var(--Neutral-very-dark-blue);
+    font-family: var(--my-font-family);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.flex-group-p{
+    color: var(--Neutral-very-dark-blue);
+    font-family: var(--my-font-family);
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.3rem;
+    letter-spacing: 0.09px;
+
+}
+/*now desktop version*/
+@media (min-width:1100px){
+    
+    .info-div-part2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr  ;
+        gap: 3rem;        
+    }
+    .supervisor{
+        margin-top: 15rem;
+        
+    }
+    .calculator{
+        margin-top: 15rem;
+    }
+    .header{
+        width: 54rem;
+        }
+    .title-info{
+        color: #4D4F62;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0.104px;
+        max-width: 540px;
+            
+        }
+    .header-p{
+        color: #4D4F62;
+        font-family: Poppins;
+        font-size: 3.6rem;
+        font-style: normal;
+        font-weight: 275;
+        line-height: normal;
+        letter-spacing: 0.25px;    
+        }
+    .header-h1{
+        color: #4D4F62;
+        text-align: center;
+        font-family: var(--my-font-family);
+        font-size: 3.6rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.25px;
+
+    }    
+    .title-info{
+        color: #4D4F62;
+        text-align: center;
+        font-family: var(--my-font-family);
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.5rem;
+        letter-spacing: 0.104px;
+
+    }
+    .flex-group-img{
+        width: 6.4rem;
+        height: 6.4rem;
+        
+    }
+    .img-div{
+        display: flex;
+        justify-content: flex-end;
+        padding: 3.2rem;
+    }
+    .flex-group-text{
+        padding: 2rem;
+    }
+    main{
+        gap: 3.4rem;
+
+    }
+    .flex-group{
+        width: 35rem;
+    }
+
+}
